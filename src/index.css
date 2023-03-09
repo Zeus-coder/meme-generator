@@ -49,3 +49,57 @@ h5{
   text-align: right;
   color: #FFFFFF;
 }
+
+.meme-generator-section{
+  display: grid;
+  padding: 1em;
+  margin: 2em auto;
+  max-width: 1100px;
+  gap: 1em;
+  grid-template-areas: 
+  "text1 text2"
+  "btn btn";
+  grid-template-rows: 2.5em 2.5em;
+}
+.first-text{
+  grid-area: text1;
+  text-indent: 1em;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+}
+
+.second-text{
+  grid-area: text2;
+  text-indent: 1em;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+}
+
+#btn{
+  grid-area: btn;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.0em;
+  color: #FFFFFF;
+}
+
+@media(max-width: 500px){
+  .meme-generator-section{
+    display: grid;
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 1100px;
+    gap: 1em;
+    grid-template-areas: 
+    "text1"
+    "text2"
+    "btn";
+    grid-template-rows: 2.5em 2.5em 2.5em;
+  }
+}
