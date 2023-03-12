@@ -6,16 +6,6 @@ import '../src/index.css';
 
 
 function App(){
-  // const [data, setData]  = React.useState(0)
-  // console.log(data)
-
-  // function incrementBtn(){
-  //   setData( prevCount => prevCount + 1)
-  // }
-  // function decrementBtn(){
-  //   setData(prevCount => prevCount -1 )
-
-  // }
   return(
     <>
       <Header/>
